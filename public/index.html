@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>FLORİDA APPLICATION</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>FLORİDA APPLICATION</h1>
+  <a href="https://discord.gg/SXETYkhCHx" target="_blank">Discord Serverimize Katıl</a>
+</header>
+
+<div class="box" id="login">
+  <h2>Giriş Yap</h2>
+  <input id="luser" placeholder="Kullanıcı">
+  <input id="lpass" type="password" placeholder="Şifre">
+  <button onclick="login()">Giriş</button>
+  <p onclick="showRegister()">Kayıt Ol</p>
+</div>
+
+<div class="box" id="register" style="display:none">
+  <h2>Kayıt Ol</h2>
+  <input id="ruser" placeholder="Kullanıcı">
+  <input id="rpass" type="password" placeholder="Şifre">
+  <button onclick="register()">Kayıt</button>
+</div>
+
+<div class="box" id="panel" style="display:none">
+  <h2>Uygulamalar</h2>
+
+  <div id="adminPanel" style="display:none">
+    <input id="name" placeholder="Uygulama Adı">
+    <input id="link" placeholder="İndirme Linki">
+    <input id="desc" placeholder="Açıklama">
+    <button onclick="addApp()">Ekle</button>
+  </div>
+
+  <div id="apps"></div>
+
+  <hr>
+  <a href="https://rwbot-site1.onrender.com/" target="_blank">Botlarımızı Ekleyin</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
